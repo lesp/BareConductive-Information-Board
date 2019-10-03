@@ -26,14 +26,14 @@ while True:
         line = line[2]
         print(line)
         if line == "0":
-            play_video("/home/les/Desktop/Pathe/0.mp4")
+            play_video("/home/pi/Pathe/0.mp4")
         elif line == "1":
-            play_video("/home/les/Desktop/Pathe/1.mp4")
+            play_video("/home/pi/Pathe/1.mp4")
         elif line == "2":
-            play_video("/home/les/Desktop/Pathe/2.mp4")
+            play_video("/home/pi/Pathe/2.mp4")
         elif line == "3":
-            play_video("/home/les/Desktop/Pathe/3.mp4")
+            play_video("/home/pi/Pathe/3.mp4")
         elif line == "4":
-            play_video("/home/les/Videos/Mini-Mega.mp4")
+            play_video("/home/pi/Pathe/Mini-Mega.mp4")
         elif line == "5":
-            play_video("/home/les/Videos/Mini-Mega.mp4")
+            play_video("/home/pi/Pathe/Mini-Mega.mp4")
