@@ -10,6 +10,7 @@ logzero.logfile("error.log", maxBytes=1e6, backupCount=3)
 
 def play_video(video):
     print("Running video")
+    print(video)
     #media = vlc.MediaPlayer("/home/les/Videos/2019-09-28 11-39-00.m4v")
     media = vlc.MediaPlayer(video)
     media.set_fullscreen(b_fullscreen=True)
@@ -37,11 +38,11 @@ while True:
             line = line[2]
             print(line)
             if line == "0":
-                play_video("/home/les/Desktop/Pathe/0.mp4")
+                play_video("0.MOV")
             elif line == "1":
-                play_video("/home/les/Desktop/Pathe/1.mp4")
+                play_video("1.MOV")
             elif line == "2":
-                play_video("/home/les/Desktop/Pathe/2.mp4")
+                play_video("2.MOV")
             elif line == "3":
                 play_video("/home/les/Desktop/Pathe/3.mp4")
             elif line == "4":
