@@ -1,12 +1,24 @@
 import serial
 import vlc
 import logzero
+import pygame
 from logzero import logger
 from time import sleep
 from PIL import Image
 
 #Logzero file
 logzero.logfile("error.log", maxBytes=1e6, backupCount=3)
+
+def picture(img,w,h):
+    pic = pygame.image.load(img)
+    background = (0, 0, 0)
+    screen = pygame.display.set_mode((w,h))
+    screen.fill((background))
+    screen.blit(pic,(0,0))
+    pygame.display.flip()
+    #sleep(10)
+    #pygame.display.quit()
+    #pygame.quit()
 
 def play_video(video):
     print("Running video")
@@ -28,8 +40,9 @@ def play_video(video):
         print("ENDED")
 
 #Display an image
-img  = Image.open("/home/les/Pictures/APOD.jpg")
-img.show()
+#img  = Image.open("/home/les/Pictures/APOD.jpg")
+#img.show()
+picture("/home/les/Pictures/APOD.jpg",1920,1080)
 
 while True:
     try:
