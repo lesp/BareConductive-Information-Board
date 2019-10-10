@@ -23,7 +23,6 @@ def picture(img,w,h):
 def play_video(video):
     print("Running video")
     print(video)
-    #media = vlc.MediaPlayer("/home/les/Videos/2019-09-28 11-39-00.m4v")
     media = vlc.MediaPlayer(video)
     media.set_fullscreen(b_fullscreen=True)
     media.play()
@@ -40,9 +39,9 @@ def play_video(video):
         print("ENDED")
 
 #Display an image
-#img  = Image.open("/home/les/Pictures/APOD.jpg")
-#img.show()
-picture("/home/les/Pictures/APOD.jpg",1920,1080)
+img  = Image.open("title.gif")
+img.show()
+#picture("1.png",1920,1080)
 
 while True:
     try:
