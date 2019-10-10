@@ -39,9 +39,9 @@ def play_video(video):
         print("ENDED")
 
 #Display an image
-img  = Image.open("title.gif")
-img.show()
-#picture("1.png",1920,1080)
+#img  = Image.open("title.gif")
+#img.show()
+picture("title.png",1920,1080)
 
 while True:
     try:
