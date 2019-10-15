@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 import serial
 import vlc
 import logzero
@@ -16,9 +17,6 @@ def picture(img,w,h):
     screen.fill((background))
     screen.blit(pic,(0,0))
     pygame.display.flip()
-    #sleep(10)
-    #pygame.display.quit()
-    #pygame.quit()
 
 def play_video(video):
     print("Running video")
@@ -38,9 +36,6 @@ def play_video(video):
         media.stop()
         print("ENDED")
 
-#Display an image
-#img  = Image.open("title.gif")
-#img.show()
 picture("title.png",1920,1080)
 
 while True:
@@ -56,11 +51,11 @@ while True:
             elif line == "2":
                 play_video("2.MOV")
             elif line == "3":
-                play_video("/home/les/Desktop/Pathe/3.mp4")
+                play_video("3.mp4")
             elif line == "4":
-                play_video("/home/les/Videos/Mini-Mega.mp4")
+                play_video("4.mp4")
             elif line == "5":
-                play_video("/home/les/Videos/Mini-Mega.mp4")
+                play_video("5.mp4")
     except:
         print("No Bare Conductive Touch Board found")
         logger.error("No Bare Conductive Touch Board has been found.")
